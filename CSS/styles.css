@@ -6,6 +6,11 @@ p
 	text-align: center;
 }
 
+a:link
+{
+	text-decoration: none;
+}
+
 .wrapper
 {
 	position: absolute;
@@ -17,4 +22,46 @@ p
 	text-align: center;
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 100;
+}
+
+#name
+{
+	font-size: 100px;
+	line-height: 80%
+}
+
+#title
+{
+	font-size: 20px;
+}
+
+#content
+{
+	font-size: 40px;
+	float: center;
+}
+
+#Projects
+{
+	font-size: 40px;
+/*	color: */
+}
+
+
+#twitter
+{
+	font-size: 40px;
+/*	color: */
+}
+
+#linkedin
+{
+	font-size: 40px;
+/*	color: */
+}
+
+#contact
+{
+	font-size: 40px;
+/*	color: */
 }
