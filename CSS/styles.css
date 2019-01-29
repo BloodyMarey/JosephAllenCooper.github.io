@@ -1,3 +1,11 @@
+p
+{
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 100;
+	font-size: 40px;
+	text-align: center;
+}
+
 .wrapper
 {
 	position: absolute;
