@@ -1,23 +1,41 @@
+body
+{
+	background-color: #222;
+}
+
+div
+{
+	box-sizing: border-box;
+	margin: 10px 0;
+}
+
 p
 {
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 100;
 	font-size: 40px;
 	text-align: center;
+	padding-bottom: 0px;
 }
 
 a
 {
 	text-decoration: none;
+	margin: 0 40px;
+	color: #f6E58D;
 }
 
-.wrapper
+a:visited
+{
+	color: #ffbe76;
+}
+
+.parent
 {
 	position: absolute;
 	top: 50%;
 	left: 0;
 	width: 100%;
-	height: 200px;
 	margin-top: -200px;
 	text-align: center;
 	font-family: 'Oxygen', sans-serif;
@@ -27,41 +45,39 @@ a
 #name
 {
 	font-size: 100px;
-	line-height: 80%
+	color: #6dd3ce;
 }
 
 #title
 {
 	font-size: 20px;
+	color: #c8e9a0;
 }
 
-#content
+.content
 {
+	padding-top: 10px;
 	font-size: 40px;
 	float: center;
 }
 
-#Projects
+.Projects
 {
 	font-size: 40px;
-/*	color: */
 }
 
 
-#twitter
+.twitter
 {
 	font-size: 40px;
-/*	color: */
 }
 
-#linkedin
+.linkedin
 {
 	font-size: 40px;
-/*	color: */
 }
 
-#contact
+.contact
 {
 	font-size: 40px;
-/*	color: */
 }
