@@ -1,23 +1,314 @@
- <!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="UTF-8">
-			<title>Joseph Cooper: Customer Success</title>
-			<meta name="description" content="Personal landing page for Joseph Cooper">
-			<meta name="keywords" content="personal,landing,page,joseph,allen,cooper,jcooper,Swinburne,Swinburne online,myob,Product specialist,trainer,training consultant,consultant,sales,parter,manager,compass">
-			<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen">
-			<link rel="stylesheet" type="text/css" href="/CSS/styles.css">
-		</head>
+<!DOCTYPE html>
+<html lang="en-AU" data-theme="dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Joe Cooper - Customer Success Leader &amp; Builder</title>
+	<meta name="description" content="Joe Cooper is a Brisbane-based customer success leader with 12+ years across SaaS, and a software builder in his own time. Driving adoption, cutting churn, growing recurring revenue.">
+	<meta name="author" content="Joe Cooper">
+	<link rel="canonical" href="https://jcooper.id.au/">
+	<meta name="theme-color" content="#0b0e14">
 
-	<body>
-		<div class="parent">
-			<div id="name">Joseph Cooper</div>
-			<div id="title"> Customer Success | Keeping customers, one at a time</div>
-			<div class="content">
-				<a class="projects" href="https://github.com/BloodyMarey/">Projects</a>
-				<a class="linkedin" href="https://www.linkedin.com/in/joseph-cooper/">LinkedIn</a>
-				<a class="contact" href="mailto:joe@jcooper.id.au">Contact</a>
+	<!-- Open Graph / Twitter -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://jcooper.id.au/">
+	<meta property="og:title" content="Joe Cooper - Customer Success Leader &amp; Builder">
+	<meta property="og:description" content="Brisbane-based customer success leader with 12+ years across SaaS, and a software builder in his own time.">
+	<meta property="og:image" content="https://jcooper.id.au/og-image.svg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Joe Cooper - Customer Success Leader &amp; Builder">
+	<meta name="twitter:description" content="Brisbane-based customer success leader with 12+ years across SaaS, and a software builder in his own time.">
+	<meta name="twitter:image" content="https://jcooper.id.au/og-image.svg">
+
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+	<link rel="stylesheet" href="CSS/styles.css">
+
+	<!-- Set theme before paint to avoid a flash -->
+	<script>
+		(function () {
+			// Mark that JS is on so CSS can safely hide-then-reveal. Without JS,
+			// no .js class means all content stays visible.
+			document.documentElement.classList.add('js');
+			try {
+				var saved = localStorage.getItem('theme');
+				var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+				var theme = saved || (prefersLight ? 'light' : 'dark');
+				document.documentElement.setAttribute('data-theme', theme);
+			} catch (e) {}
+		})();
+	</script>
+</head>
+<body>
+	<a class="skip-link" href="#about">Skip to content</a>
+
+	<!-- Scroll progress -->
+	<div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+	<!-- Generative hero backdrop -->
+	<canvas class="hero-canvas" aria-hidden="true"></canvas>
+
+	<header class="site-header">
+		<a class="brand" href="#home" aria-label="Joe Cooper, home">
+			<span class="brand-mark" aria-hidden="true">JC</span>
+		</a>
+		<nav class="site-nav" aria-label="Primary">
+			<a href="#about">About</a>
+			<a href="#experience">Experience</a>
+			<a href="#contact">Contact</a>
+			<button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch theme">
+				<svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g class="rays"><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.5" y1="4.5" x2="6.6" y2="6.6"/><line x1="17.4" y1="17.4" x2="19.5" y2="19.5"/><line x1="4.5" y1="19.5" x2="6.6" y2="17.4"/><line x1="17.4" y1="6.6" x2="19.5" y2="4.5"/></g></svg>
+				<svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+			</button>
+		</nav>
+	</header>
+
+	<main id="main">
+		<!-- HERO -->
+		<section class="hero" id="home">
+			<div class="hero-inner">
+				<p class="hero-eyeblock reveal">
+					<span class="pin" aria-hidden="true">◆</span> Brisbane, Australia
+				</p>
+				<h1 class="hero-name reveal">Joe Cooper</h1>
+				<p class="hero-tagline reveal">
+					Customer success leader and builder. I sit between the technical and the human,
+					turning complex software into outcomes people actually feel.
+				</p>
+
+				<ul class="stat-row reveal" aria-label="Career highlights">
+					<li>
+						<span class="stat-num" data-count-to="70" data-count-from="14" data-suffix="">14&rarr;70</span>
+						<span class="stat-label">NT NPS, lifted</span>
+					</li>
+					<li>
+						<span class="stat-num" data-count-to="250" data-suffix="+">250+</span>
+						<span class="stat-label">Schools owned</span>
+					</li>
+					<li>
+						<span class="stat-num" data-count-to="150" data-suffix="+">150+</span>
+						<span class="stat-label">Firms migrated to SaaS</span>
+					</li>
+					<li>
+						<span class="stat-num" data-count-to="12" data-suffix="+">12+</span>
+						<span class="stat-label">Years in SaaS</span>
+					</li>
+				</ul>
+
+				<div class="hero-cta reveal">
+					<a class="btn btn-primary magnetic" href="https://www.linkedin.com/in/joseph-cooper/" target="_blank" rel="noopener">
+						Connect on LinkedIn
+					</a>
+					<a class="btn btn-ghost magnetic" data-email href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#101;&#64;&#106;&#99;&#111;&#111;&#112;&#101;&#114;&#46;&#105;&#100;&#46;&#97;&#117;">
+						Email me
+					</a>
+					<a class="btn btn-ghost magnetic" href="https://github.com/BloodyMarey" target="_blank" rel="noopener">
+						GitHub
+					</a>
+				</div>
 			</div>
-		</div>
-	</body>
-</html> 
+			<a class="scroll-cue" href="#about" aria-label="Scroll to about">
+				<span></span>
+			</a>
+		</section>
+
+		<!-- ABOUT -->
+		<section class="section about" id="about">
+			<div class="section-head reveal">
+				<span class="section-index">01</span>
+				<h2>About</h2>
+			</div>
+			<div class="about-body">
+				<p class="lead reveal">
+					I am a strategic customer success leader with more than twelve years driving adoption,
+					reducing churn, and expanding recurring revenue for SaaS platforms. I build
+					high-performing teams, design data-driven health-score and NPS programmes, and
+					translate complex technical solutions into measurable business outcomes. What I
+					care about most is empowering customers to reach their digital transformation goals.
+				</p>
+				<p class="reveal">
+					There is a second thread to who I am. I build software in my own time, and it is a
+					genuine part of me rather than a job requirement. My current project is KMate, an
+					Australian kilometre-tracking and ATO-compliant logbook app that helps people record
+					vehicle trips and keep records that satisfy Australian Taxation Office requirements.
+					I work full-stack across Laravel, React with TypeScript, and React Native, on AWS
+					infrastructure with PostgreSQL, and I run an Arch-based Linux setup as my daily driver.
+				</p>
+				<p class="reveal">
+					I lead customer success by day and ship code by night, and I am just as comfortable
+					running a coaching session as I am architecting a solution. Away from the screen you
+					will find me cooking, at the sewing machine, or rolling dice over a game of D&amp;D.
+					Warm and direct, in person and on the page.
+				</p>
+			</div>
+		</section>
+
+		<!-- EXPERIENCE -->
+		<section class="section experience" id="experience">
+			<div class="section-head reveal">
+				<span class="section-index">02</span>
+				<h2>Experience</h2>
+			</div>
+
+			<ol class="timeline">
+				<li class="tl-item reveal">
+					<div class="tl-marker" aria-hidden="true"></div>
+					<div class="tl-card">
+						<div class="tl-top">
+							<h3>Senior State Manager, Customer Success <span class="tl-sub">NSW/QLD</span></h3>
+							<span class="tl-date">Mar 2026 - Present</span>
+						</div>
+						<p class="tl-org">Compass Education <span class="tl-note">Brisbane</span></p>
+						<p>
+							I hold strategic responsibility for every Compass school across New South Wales and
+							Queensland, spanning the government, independent, and Catholic sectors. I lead and
+							develop a state-based team of six junior and senior consultants, building it through
+							a deliberate growth phase.
+						</p>
+						<ul class="tl-points">
+							<li>Drive state-wide NPS, retention, and renewal outcomes across the territory.</li>
+							<li>Own the relationships on flagship strategic accounts, co-leading Compass's most significant independent-sector engagement in the state.</li>
+							<li>Represent the voice of the customer into product and executive decision-making.</li>
+							<li>Built and run an AI-powered executive agent platform that systemises account intelligence, communications, and strategic planning across the role.</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="tl-item reveal">
+					<div class="tl-marker" aria-hidden="true"></div>
+					<div class="tl-card">
+						<div class="tl-top">
+							<h3>Manager, Customer Success <span class="tl-sub">Independent Sector</span></h3>
+							<span class="tl-date">Nov 2024 - Mar 2026</span>
+						</div>
+						<p class="tl-org">Compass Education <span class="tl-note">Brisbane</span></p>
+						<p>
+							I owned the end-to-end success of more than 250 independent schools across Australia
+							and acted as the primary point of contact for the QLD and NT markets. I led and mentored
+							a team of 16 customer success specialists nationally, with clear career pathways, weekly
+							coaching, and performance dashboards.
+						</p>
+						<ul class="tl-points">
+							<li>Stabilised high-churn-risk accounts through remediation plans that improved relationship health and reduced attrition.</li>
+							<li>Served as Solution Architect and Implementation Manager on high-value go-to-market deals, translating technical requirements into scalable configurations.</li>
+							<li>Designed and maintained the global NPS programme, standardising survey methodology and feeding insights back to product.</li>
+							<li>Led adoption of Zoho Desk and Zoho CRM across the CS organisation, building SOPs, training modules, and automations.</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="tl-item reveal">
+					<div class="tl-marker" aria-hidden="true"></div>
+					<div class="tl-card">
+						<div class="tl-top">
+							<h3>Manager, Customer Success <span class="tl-sub">QLD &amp; NT</span></h3>
+							<span class="tl-date">Jan 2020 - Nov 2024</span>
+						</div>
+						<p class="tl-org">Compass Education <span class="tl-note">Brisbane</span></p>
+						<p>
+							I owned the full customer lifecycle for every Compass school in QLD and NT, acting as
+							the primary liaison between schools, product, and the regional consulting group, and
+							mentoring a consulting team toward stronger productivity.
+						</p>
+						<ul class="tl-points">
+							<li>Served as the escalation point for high-complexity cases, partnering with product to resolve issues quickly.</li>
+							<li>Designed and ran onboarding, training, and adoption programmes that accelerated time-to-value for new schools.</li>
+							<li>Led retention and renewal initiatives with account managers, securing contract extensions and hitting joint revenue targets.</li>
+							<li>Migrated NPS surveys from email to in-app prompts, delivering richer sentiment data into product road-mapping.</li>
+						</ul>
+					</div>
+				</li>
+
+				<li class="tl-item reveal">
+					<div class="tl-marker" aria-hidden="true"></div>
+					<div class="tl-card">
+						<div class="tl-top">
+							<h3>Customer Success &amp; Enablement</h3>
+							<span class="tl-date">May 2014 - Dec 2019</span>
+						</div>
+						<p class="tl-org">MYOB <span class="tl-note">Melbourne &amp; Brisbane</span></p>
+						<p>
+							I progressed through Support, Product Specialist, Consultant, Partner Manager, and CSM
+							roles, a full progression through every customer-facing role in the business, and where
+							the breadth of how I work took shape.
+						</p>
+						<ul class="tl-points">
+							<li>Drove SaaS migrations for more than 150 accounting firms, lifting recurring revenue and adoption.</li>
+							<li>Designed and delivered product-training webinars and in-person sessions that boosted feature uptake.</li>
+							<li>Managed high-severity escalations and consistently exceeded quota for acquisition, retention, and activity.</li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+
+			<div class="skills reveal" aria-label="Skills">
+				<div class="skills-group">
+					<h4>Customer success</h4>
+					<ul>
+						<li>Onboarding &amp; enablement</li>
+						<li>NPS programme design</li>
+						<li>Health-score modelling</li>
+						<li>Escalation management</li>
+						<li>Renewals &amp; retention</li>
+					</ul>
+				</div>
+				<div class="skills-group">
+					<h4>Leadership</h4>
+					<ul>
+						<li>Coaching &amp; mentoring</li>
+						<li>Performance dashboards</li>
+						<li>Career-path planning</li>
+						<li>Change management</li>
+						<li>Public speaking</li>
+					</ul>
+				</div>
+				<div class="skills-group">
+					<h4>Tools &amp; craft</h4>
+					<ul>
+						<li>Zoho Desk &amp; CRM</li>
+						<li>Salesforce, HubSpot</li>
+						<li>Jira, Monday.com</li>
+						<li>Solutions architecture</li>
+						<li>Laravel, React, AWS</li>
+					</ul>
+				</div>
+			</div>
+
+			<p class="tl-more reveal">
+				Visit my
+				<a href="https://www.linkedin.com/in/joseph-cooper/" target="_blank" rel="noopener">LinkedIn</a>
+				for the full picture.
+			</p>
+		</section>
+
+		<!-- CONTACT -->
+		<section class="section contact" id="contact">
+			<div class="contact-inner reveal">
+				<h2>Let&rsquo;s talk</h2>
+				<p>
+					Hiring, collaborating, or just comparing notes on customer success and building things.
+					I would be glad to hear from you.
+				</p>
+				<div class="contact-links">
+					<a class="btn btn-primary magnetic" data-email href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#101;&#64;&#106;&#99;&#111;&#111;&#112;&#101;&#114;&#46;&#105;&#100;&#46;&#97;&#117;">
+						joe@jcooper.id.au
+					</a>
+					<a class="btn btn-ghost magnetic" href="https://www.linkedin.com/in/joseph-cooper/" target="_blank" rel="noopener">LinkedIn</a>
+					<a class="btn btn-ghost magnetic" href="https://github.com/BloodyMarey" target="_blank" rel="noopener">GitHub</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>&copy; <span id="year">2026</span> Joe Cooper. Built in Brisbane.</p>
+	</footer>
+
+	<script type="module" src="js/main.js?v=2"></script>
+</body>
+</html>

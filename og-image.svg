@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="0.55" stop-color="#8b7bfb"/>
+      <stop offset="1" stop-color="#f5b64e"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="82%" cy="12%" r="55%">
+      <stop offset="0" stop-color="#8b7bfb" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#8b7bfb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="10%" cy="88%" r="55%">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0b0e14"/>
+  <rect width="1200" height="630" fill="url(#glowA)"/>
+  <rect width="1200" height="630" fill="url(#glowB)"/>
+
+  <g font-family="'Space Grotesk', system-ui, sans-serif">
+    <rect x="90" y="86" width="86" height="86" rx="20" fill="url(#brand)"/>
+    <text x="133" y="142" text-anchor="middle" font-weight="700" font-size="40" fill="#0b0e14" letter-spacing="-1">JC</text>
+
+    <text x="92" y="330" font-weight="700" font-size="118" letter-spacing="-4" fill="#eef1f6">Joe Cooper</text>
+    <text x="96" y="404" font-family="'JetBrains Mono', monospace" font-size="30" fill="#2dd4bf" letter-spacing="1">Customer Success Leader &amp; Builder</text>
+    <text x="96" y="470" font-size="34" fill="#9aa3b2">12+ years across SaaS. Brisbane, Australia.</text>
+  </g>
+
+  <rect x="0" y="618" width="1200" height="12" fill="url(#brand)"/>
+</svg>
